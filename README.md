@@ -66,6 +66,19 @@ Service::get('application');
 // Get the current request uri as a string
 Request::getUriString();
 
+// Add a route to the router
+Router::addRoute('testroute', array(
+    'type' => 'segment',
+    'options' => array(
+        'route' => '/test/route',
+        'controller' => 'index',
+        'action' => 'test',
+    )
+));
+
+// Get the url for that route
+Router::assemble(array(), array('name' => 'testroute')));
+
 ```
 
 

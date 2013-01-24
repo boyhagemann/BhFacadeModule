@@ -13,6 +13,7 @@ return array(
             'Service' =>        'BhFacadeModule\Zf2ServiceLocator',     
             'Di' =>             'BhFacadeModule\Zf2Di',     
             'App' =>            'BhFacadeModule\Zf2Application',     
+            'Router' =>         'BhFacadeModule\Zf2Router',     
             'RouteMatch' =>     'BhFacadeModule\Zf2RouteMatch',     
             'Request' =>        'BhFacadeModule\Zf2Request',
         ),
