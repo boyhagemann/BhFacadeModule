@@ -46,10 +46,25 @@ Then activate the module in your application:
 
  ```
 
+Congratulations! You now have a working module and can enjoy the bless of facades!
+
+Out of the box
+--------------
+
+These facades are already registered when you activate the module:
+
+* Service
+* Di
+* App
+* Router
+* RouteMatch
+* Request
+* View
 
 Examples
 ------------
 
+Here are some examples to get an impression how you can use facades. 
 
 ```php
 <?php
