@@ -79,6 +79,9 @@ Router::addRoute('testroute', array(
 // Get the url for that route
 Router::assemble(array(), array('name' => 'testroute')));
 
+// Render a view template
+View::render('application/index/index');
+
 ```
 
 

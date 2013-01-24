@@ -16,6 +16,7 @@ return array(
             'Router' =>         'BhFacadeModule\Zf2Router',     
             'RouteMatch' =>     'BhFacadeModule\Zf2RouteMatch',     
             'Request' =>        'BhFacadeModule\Zf2Request',
+            'View' =>           'BhFacadeModule\Zf2ViewRenderer',
         ),
     ),
 );
