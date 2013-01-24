@@ -12,7 +12,6 @@ return array(
         'facades' => array(
             'Service' =>        'BhFacadeModule\Zf2ServiceLocator',     
             'Di' =>             'BhFacadeModule\Zf2Di',     
-            'Test' =>           'BhFacadeModule\Test',     
             'App' =>            'BhFacadeModule\Zf2Application',     
             'RouteMatch' =>     'BhFacadeModule\Zf2RouteMatch',     
         ),
