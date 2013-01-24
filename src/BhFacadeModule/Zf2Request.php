@@ -1,6 +1,6 @@
 <?php
 
-namespace BhFacadeModule\Facade;
+namespace BhFacadeModule;
 
 class Zf2Request extends Facade
 {
