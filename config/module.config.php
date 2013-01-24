@@ -10,7 +10,7 @@
 return array(
     'service_manager' => array(
         'facades' => array(
-            'Service' =>        'Facade\Zf2ServiceLocator',     
+            'Service' =>        'BhFacadeModule\Zf2ServiceLocator',     
             'Di' =>             'BhFacadeModule\Zf2Di',     
             'Test' =>           'BhFacadeModule\Test',     
             'App' =>            'BhFacadeModule\Zf2Application',     
