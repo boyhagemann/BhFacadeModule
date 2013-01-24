@@ -35,21 +35,15 @@ Then activate the module in your application:
 
 // config/application.config.php
 
-return array(
+// ...
+
     'modules' => array(
         'BhFacadeModule', // This is the only line you have to add
         'Application',
     ),
-    'module_listener_options' => array(
-        'config_glob_paths'    => array(
-            'config/autoload/{,*.}{global,local}.php',
-        ),
-        'module_paths' => array(
-            './module',
-            './vendor',
-        ),
-    ),
-);
+
+// ...
+
  ```
 
 
