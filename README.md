@@ -4,7 +4,8 @@ BhFacadeModule
 Introduction
 ------------
 This a startup making the facade pattern possible for ZF2 projects. It is based
-and inspired on the excellent Laravel framework.
+and inspired on the excellent Laravel framework. It uses the Zend service locator
+internally by default.
 
 
 Installation with Composer
@@ -36,7 +37,7 @@ Then activate the module in your application:
 
 return array(
     'modules' => array(
-        'BhFacadeModule',
+        'BhFacadeModule', // This is the only line you have to add
         'Application',
     ),
     'module_listener_options' => array(
@@ -61,6 +62,9 @@ Examples
 
 // Get the application from the default Zend service locator
 Service::get('application');
+
+// Get the current request uri as a string
+Request::getUriString();
 
 ```
 

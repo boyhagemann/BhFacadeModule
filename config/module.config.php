@@ -14,6 +14,7 @@ return array(
             'Di' =>             'BhFacadeModule\Zf2Di',     
             'App' =>            'BhFacadeModule\Zf2Application',     
             'RouteMatch' =>     'BhFacadeModule\Zf2RouteMatch',     
+            'Request' =>        'BhFacadeModule\Zf2Request',
         ),
     ),
 );
