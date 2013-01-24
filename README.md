@@ -10,7 +10,7 @@ and inspired on the excellent Laravel framework.
 Installation with Composer
 ------------
 
-Add the following lines to your composer.json file.
+Add the following lines to your composer.json file:
 
      ```json
      {
@@ -27,6 +27,29 @@ Add the following lines to your composer.json file.
      }
      ```
 
+Then activate the module in your application:
+
+     ```php
+    <?php
+
+    // config/application.config.php
+
+    return array(
+        'modules' => array(
+            'BhFacadeModule',
+            'Application',
+        ),
+        'module_listener_options' => array(
+            'config_glob_paths'    => array(
+                'config/autoload/{,*.}{global,local}.php',
+            ),
+            'module_paths' => array(
+                './module',
+                './vendor',
+            ),
+        ),
+    );
+     ```
 
 Examples
 ------------
