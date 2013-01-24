@@ -1,0 +1,14 @@
+{
+    "name": "boyhagemann/bh-facade-module",
+    "description": "Facade module for ZF2",
+    "license": "BSD-3-Clause",
+    "keywords": [
+        "facade",
+        "zf2"
+    ],
+    "homepage": "http://github.com/boyhagemann/BhFacadeModule",
+    "require": {
+        "php": ">=5.3.3",
+        "zendframework/zendframework": "2.*"
+    }
+}
