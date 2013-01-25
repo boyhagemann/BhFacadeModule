@@ -11,6 +11,7 @@ namespace BhFacadeModule;
 
 use Zend\Mvc\MvcEvent;
 use Zend\ServiceManager\ServiceManager;
+use Zend\ModuleManager\Feature\ServiceProviderInterface;
 
 class Module
 {
@@ -35,9 +36,9 @@ class Module
         
     }
     
-    public function getConfig()
+    public function getServiceConfig()
     {
-        return include __DIR__ . '/../../config/module.config.php';
+        return include __DIR__ . '/../../config/service.config.php';
     }
 
     public function getAutoloaderConfig()
