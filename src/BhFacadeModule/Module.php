@@ -23,7 +23,7 @@ class Module
             return;
         }
         
-        $serviceClass = 'BhFacadeModule\Zf2ServiceLocator';
+        $serviceClass = 'facade-service-locator';
         $serviceManager->setInvokableClass($serviceClass, $serviceClass);
         $facade = $serviceManager->get($serviceClass);
         $facade->setContainer($serviceManager);

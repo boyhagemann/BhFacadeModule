@@ -11,6 +11,6 @@ class Zf2RouteMatch extends Facade
 	 */
 	protected static function getFacadeAccessor()
 	{
-		return static::$container->get('application')->getMvcEvent()->getRouteMatch();
+		return static::$container->get('facade-application')->getMvcEvent()->getRouteMatch();
 	}
 }

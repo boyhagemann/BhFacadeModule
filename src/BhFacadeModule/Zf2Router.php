@@ -11,6 +11,6 @@ class Zf2Router extends Facade
 	 */
 	protected static function getFacadeAccessor()
 	{
-		return static::$container->get('router');
+		return static::$container->get('facade-router');
 	}
 }

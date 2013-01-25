@@ -18,5 +18,12 @@ return array(
             'Request' =>        'BhFacadeModule\Zf2Request',
             'View' =>           'BhFacadeModule\Zf2ViewRenderer',
         ),
+        'aliases' => array(
+            'facade-service-locator'    => 'BhFacadeModule\Zf2ServiceLocator',
+            'facade-di'                 => 'di',
+            'facade-application'        => 'application',
+            'facade-router'             => 'router',
+            'facade-viewrenderer'       => 'viewrenderer',
+        )
     ),
 );

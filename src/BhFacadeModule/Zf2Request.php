@@ -11,6 +11,6 @@ class Zf2Request extends Facade
 	 */
 	protected static function getFacadeAccessor()
 	{
-		return static::$container->get('application')->getRequest();
+		return static::$container->get('facade-application')->getRequest();
 	}
 }

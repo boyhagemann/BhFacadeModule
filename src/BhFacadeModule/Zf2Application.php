@@ -11,6 +11,6 @@ class Zf2Application extends Facade
 	 */
 	protected static function getFacadeAccessor()
 	{
-		return 'application';
+		return 'facade-application';
 	}
 }

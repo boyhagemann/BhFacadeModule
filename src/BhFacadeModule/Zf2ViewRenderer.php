@@ -11,6 +11,6 @@ class Zf2ViewRenderer extends Facade
 	 */
 	protected static function getFacadeAccessor()
 	{
-		return static::$container->get('viewrenderer');
+		return static::$container->get('facade-viewrenderer');
 	}
 }
