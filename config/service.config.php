@@ -8,25 +8,23 @@
  */
 
 return array(
-    'service_manager' => array(
-        'facades' => array(
-            'Service' =>        'BhFacadeModule\Zf2ServiceLocator',     
-            'Di' =>             'BhFacadeModule\Zf2Di',     
-            'App' =>            'BhFacadeModule\Zf2Application',     
-            'Router' =>         'BhFacadeModule\Zf2Router',     
-            'RouteMatch' =>     'BhFacadeModule\Zf2RouteMatch',     
-            'Request' =>        'BhFacadeModule\Zf2Request',
-            'View' =>           'BhFacadeModule\Zf2ViewRenderer',
-        ),
-        'invokables' => array(
-            'BhFacadeModule\Zf2ServiceLocator' => 'BhFacadeModule\Zf2ServiceLocator',
-        ),
-        'aliases' => array(
-            'facade-service-locator'    => 'BhFacadeModule\Zf2ServiceLocator',
-            'facade-di'                 => 'di',
-            'facade-application'        => 'application',
-            'facade-router'             => 'router',
-            'facade-viewrenderer'       => 'viewrenderer',
-        )
+    'facades' => array(
+        'Service' =>        'BhFacadeModule\Zf2ServiceLocator',     
+        'Di' =>             'BhFacadeModule\Zf2Di',     
+        'App' =>            'BhFacadeModule\Zf2Application',     
+        'Router' =>         'BhFacadeModule\Zf2Router',     
+        'RouteMatch' =>     'BhFacadeModule\Zf2RouteMatch',     
+        'Request' =>        'BhFacadeModule\Zf2Request',
+        'View' =>           'BhFacadeModule\Zf2ViewRenderer',
     ),
+    'invokables' => array(
+        'BhFacadeModule\Zf2ServiceLocator' => 'BhFacadeModule\Zf2ServiceLocator',
+    ),
+    'aliases' => array(
+        'facade-service-locator'    => 'BhFacadeModule\Zf2ServiceLocator',
+        'facade-di'                 => 'di',
+        'facade-application'        => 'application',
+        'facade-router'             => 'router',
+        'facade-viewrenderer'       => 'viewrenderer',
+    )
 );
