@@ -7,6 +7,8 @@ This a startup making the facade pattern possible for ZF2 projects. It is based
 and inspired on the excellent Laravel framework. It uses the Zend service locator
 internally by default.
 
+The easiest way to check it out is to clone the [Zend Skeleton Application] (https://github.com/zendframework/ZendSkeletonApplication "Zend Skeleton Application")
+and edit the composer.json file (see installation below).
 
 Installation with Composer
 ------------
