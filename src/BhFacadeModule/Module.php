@@ -20,7 +20,7 @@ class Module
         $serviceManager = $e->getApplication()->getServiceManager();
             
         $config = $e->getApplication()->getConfig();
-        if(!isset($config['service_manager']['facades'])) {
+        if(!isset($config['service-manager']['facades'])) {
             return;
         }
         
