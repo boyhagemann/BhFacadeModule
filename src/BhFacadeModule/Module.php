@@ -20,14 +20,14 @@ class Module
         $serviceManager = $e->getApplication()->getServiceManager();
             
         $config = $e->getApplication()->getConfig();
-        if(!isset($config['service-manager']['facades'])) {
+        if(!isset($config['service_manager']['facades'])) {
             return;
         }
         
         $facade = $serviceManager->get('facade-service-locator');
         $facade->setContainer($serviceManager);
         
-        foreach($config['service-manager']['facades'] as $alias => $class) {
+        foreach($config['service_manager']['facades'] as $alias => $class) {
             class_alias($class, $alias);          
             if(!$serviceManager->has($class)) {
                 $serviceManager->setInvokableClass($class, $class);
