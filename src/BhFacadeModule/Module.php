@@ -23,9 +23,7 @@ class Module
             return;
         }
         
-        $serviceClass = 'facade-service-locator';
-        $serviceManager->setInvokableClass($serviceClass, $serviceClass);
-        $facade = $serviceManager->get($serviceClass);
+        $facade = $serviceManager->get('facade-service-locator');
         $facade->setContainer($serviceManager);
         
         foreach($config['service_manager']['facades'] as $alias => $class) {
